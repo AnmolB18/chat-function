@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;  /* Ensure padding and borders are included in element's total width and height */
+    margin: 0;               /* Remove default margin */
+    padding: 0;              /* Remove default padding */
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    line-height: 1.6;                /* Increase line height for readability */
+    background-color: #f4f4f4;       /* Light gray background */
+  }
+  
+  .app-container {
+    display: flex;               /* Use flexbox for layout */
+    flex-direction: column;      /* Stack children vertically */
+    min-height: 100vh;          /* Full height of the viewport */
+  }
+  
+  header {
+    background-color: #007bff;  /* Header background color */
+    color: white;                /* Header text color */
+    padding: 20px;               /* Padding for header */
+    text-align: center;          /* Center the text */
+  }
+  
+  main {
+    flex: 1;                     /* Take up remaining space */
+    padding: 20px;               /* Padding for main content */
+    background-color: #ffffff;   /* White background for main area */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px;          /* Rounded corners */
+  }
+  
+  footer {
+    background-color: #343a40;  /* Dark background for footer */
+    color: white;                /* Footer text color */
+    text-align: center;          /* Center the footer text */
+    padding: 10px;               /* Padding for footer */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    header, footer {
+      padding: 15px;             /* Reduce padding on smaller screens */
+    }
+  
+    main {
+      padding: 15px;             /* Reduce padding on smaller screens */
+    }
+  }
+  
